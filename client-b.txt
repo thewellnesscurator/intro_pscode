@@ -2,3 +2,34 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+﻿Task B: Find the Spot
+
+
+Develop a mapping (walking) application to find a specific set location in a large warehouse store for a customer. The customer can move north, south, east, or west.
+
+
+Think of the warehouse in 2D grid with an x-axis and y-axis.
+
+
+Define movements/directions that customer can move
+    IF North:
+      Move up the aisle (0 on x-axis, +1 on y-axis)
+    IF South:
+      Move down the aisle (0 on x-axis, -1 on y-axis)
+    IF East:
+      Move right to the adjacent aisle (+1 on x-axis, 0 on y-axis)
+    IF West:
+      Move left  to the adjacent aisle (-1 on x-axis, 0 on y-axis)
+
+
+SET variable startingLocation
+   Store starting coordinates as start_X, start_y 
+SET variable currentLocation
+   Store current coordinates as customer changes locations
+SET variable targetLocation
+   Store target coordinates as end_x, end_y
+
+
+While desired move (x, y) != coordinates blocked by shelves, walls, or items and != coordinates outside of the warehouse and != targetLocation
+   Move to the desired location/coordinates.
+   EndWhile currentLocation = targetLocation

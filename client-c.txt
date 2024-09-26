@@ -2,3 +2,19 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+﻿Task C: Product Package Counter
+
+
+You need to develop a program that counts the number of items that a hardware device scans to sort for boxing packages into cases. Each package scanned is two (2) products. Each case can only fit 50 product packages. Write a program that prints numbers from 2 to 50, counting by twos.
+
+
+
+
+SET variable maxProducts = 100
+SET variable productCount = 2
+
+
+While productCount <= maxPackages:
+    Increase productCount by 2 per scan 
+    Print current value of productCount
+    Endwhile productCount = maxProducts

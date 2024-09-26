@@ -2,3 +2,45 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+﻿Task A: Guess the Number Game
+
+
+Write pseudocode for a number guessing game. The computer chooses a random number between 1 and 10, and the player has 3 chances to guess.
+
+
+“Intro:
+Display message: "Welcome to the Number Guessing Game!"
+
+
+SET variable randomNumber to be an integer between 1 and 10
+
+
+Display message: “I am thinking of a number between 1 and 10. Good luck trying to guess! I’ll give you 3 chances to get it right.”
+
+
+SET variable playerGuess to 0 (integer) 
+SET variable remainingGuesses to 3 (integer)
+
+
+While randomNumber != playerGuess and remainingGuesses > 0, repeat:
+   Display message: “What number am I thinking of?”
+   Store imputed answer a playerGuess
+      If playerGuess != an integer between 1-10:
+         Display message: "Please enter a valid number.”
+         Skip decrease of remainingGuesses.
+      If playerGuess === randomNumber:
+         Display: "Wow! You've guessed the correct number!"
+         EndIf
+      Else if playerGuess < randomNumber:
+         Display message: “Too low! Try again.”
+         Decrease remaningGuesses by 1.
+      Else if  playerGuess > randomNumber:
+         Display message: “Too high! Try again.”
+         Decrease remaningGuesses by 1.
+      If remainingGuesses = 0 and playerGuess != randomNumber:
+       Display message: “randomNumber was the number on my mind:
+      EndIf
+
+
+Outro:
+Display message:. Thanks for playing!”
